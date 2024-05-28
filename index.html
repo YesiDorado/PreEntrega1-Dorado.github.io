@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <title>Vivero Rosales</title>
     <link rel="stylesheet" href="assets/scss/app.css"/>
 </head>
@@ -21,7 +21,7 @@
                         <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#acercade" class="nav__link">Acerca de</a>
+                        <a href="assets/page/acercade.html" class="nav__link">Acerca de</a>
                     </li>
                     <li class="nav__item">
                         <a href="#productos" class="nav__link">Productos</a>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="nav__btns">
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <i class="fi fi-ss-moon"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fi fi-br-menu-burger"></i>
@@ -50,7 +50,41 @@
     </header>
 
     <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="assets/img/inicio.png" alt="" class="home__img">
 
+                <div class="home__data">
+                    <h1 class="home__titulo">
+                        Cultivando vida <br> un jardín a la vez
+                    </h1>
+                    <p class="home__descripcion">
+                        Ofrecemos una gran variedad de plantas de interior y exterior, 
+                        cuidadas con amor. Nuestro equipo te ayudará a encontrar la planta 
+                        perfecta para tu espacio. Promovemos prácticas ecológicas para un futuro sostenible. 
+                        Únete a nuestra comunidad verde y transforma tu vida con cada planta
+                    </p>
+                    <a href="assets/page/acercade.html" class="button button--flex">
+                        Explora <i class="fi fi-br-angle-double-small-right button_icon"></i>
+                    </a>
+                </div>
+                <div class="home__social">
+                    <span class="home__social-seguime">Seguinos</span>
+
+                    <div class="home__social-links">
+                        <a class="home__social-link" href="http://www.facebook.com/" target="_blank">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a class="home__social-link" href="http://www.instagram.com/" target="_blank">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                        <a class="home__social-link" href="http://www.youtube.com/" target="_blank">
+                            <i class="fi fi-brands-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer-section">
