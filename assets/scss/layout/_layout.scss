@@ -1,0 +1,27 @@
+.section{
+    padding: 5.5rem 0 1rem;
+
+    &__titulo, &__title-centro{
+        font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+    line-height: 140%;
+
+        &-centro{
+            text-align: center;
+        }
+    }
+}
+
+.contenedor{
+    max-width: 60.5rem;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+}
+
+.main{
+    overflow: hidden;
+}
