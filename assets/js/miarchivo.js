@@ -1,3 +1,23 @@
+let nombre = prompt('Ingrese nombre');
+let apellido = prompt('Ingrese apellido');
+
+let nacim = Number(prompt('Ingrese su año de nacimiento'));
+while (nacim < 1 || !Number.isInteger(nacim)) {
+    alert('Debe ingresar un año valido');
+    nacim = Number(prompt('Ingrese su año de nacimiento'));
+}
+
+// función para validar la edad del usuario
+let anioVigente = new Date().getFullYear();
+let miEdad = anioVigente - nacim;
+if (miEdad >= 18) {
+    alert('Su edad es: ' + miEdad + ' años, Puede continuar con la compra');
+} else {
+    alert('Su edad es: ' + miEdad + ' años, No puede continuar con la compra, solo consultar valores');
+}
+
+alert('Bienvenido: ' + nombre + ' ' + apellido + '!!' + ' Esta por realizar la compra / consulta sobre productos para tu jardin');
+
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close');
